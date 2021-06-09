@@ -36,9 +36,9 @@
           <option value="Osom">
           <option value="Berny">
           </datalist>
-        <input type="number" id="score1" name="score1" value="0" onfocus="if (this.value=='0') this.value='';"
+        <input type="number" id="score1" name="score1" value="0" onfocus="if (this.value !='') this.value='';"
         onblur="if (this.value=='') this.value='0';">
-        <input type="number" id="score2" name="score2" value="0" onfocus="if (this.value=='0') this.value='';"
+        <input type="number" id="score2" name="score2" value="0" onfocus="if (this.value !='') this.value='';"
         onblur="if (this.value=='') this.value='0';">
         
         <button onclick="saveName()">
