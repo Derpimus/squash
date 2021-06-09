@@ -22,12 +22,24 @@
   <body>
     
     <div class="container">
-      <div class="plus">
-        
-        <input type="text" id="name1" name="fname1" value="Imie">
-        <input type="text" id="name2" name="fname2" value="Imie">
-        <input type="number" id="score1" name="score1" value="0">
-        <input type="number" id="score2" name="score2" value="0">
+      <div class="plus">    
+        <!--  <input type="text" id="name1" name="fname1" value="Imie" onfocus="if (this.value=='Imie') this.value='';" onblur="if (this.value=='') this.value='Imie';">  -->
+        <input list="players" id="name1" value="Imie" onclick="if (this.value !='') this.value='';" onblur="if (this.value=='') this.value='Imie';">
+          <datalist id="players">
+          <option value="Maruda">  
+          <option value="Osom">
+          <option value="Berny">
+          </datalist>
+        <input list="players" id="name2" value="Imie" onclick="if (this.value !='') this.value='';" onblur="if (this.value=='') this.value='Imie';">
+          <datalist id="players">
+          <option value="Maruda">  
+          <option value="Osom">
+          <option value="Berny">
+          </datalist>
+        <input type="number" id="score1" name="score1" value="0" onfocus="if (this.value=='0') this.value='';"
+        onblur="if (this.value=='') this.value='0';">
+        <input type="number" id="score2" name="score2" value="0" onfocus="if (this.value=='0') this.value='';"
+        onblur="if (this.value=='') this.value='0';">
         
         <button onclick="saveName()">
           ADD
