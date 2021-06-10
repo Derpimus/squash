@@ -191,14 +191,14 @@ span {
 
 .score1 {
   position: fixed;
-  left: 60%;
+  left: 40%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 
 .score2 {
   position: fixed;
-  left: 40%;
+  left: 60%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
