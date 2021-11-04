@@ -1,56 +1,44 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap" rel="stylesheet">
-    <title>i tak maruda wygra!</title>
     <script src="https://kit.fontawesome.com/4a361119e0.js" crossorigin="anonymous"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
-    
-  </head>
+<body>
 
-  <!-- BODY ############################################################################## -->
-  <body>
-    
-    <div class="container">
-      <div class="plus">    
-        <!--  <input type="text" id="name1" name="fname1" value="Imie" onfocus="if (this.value=='Imie') this.value='';" onblur="if (this.value=='') this.value='Imie';">  -->
-        <input list="players" id="name1" value="Imie" onclick="if (this.value !='') this.value='';" onblur="if (this.value=='') this.value='Imie';">
-          <datalist id="players">
-          <option value="Maruda">  
-          <option value="Osom">
-          <option value="Berny">
-          </datalist>
-        <input list="players" id="name2" value="Imie" onclick="if (this.value !='') this.value='';" onblur="if (this.value=='') this.value='Imie';">
-          <datalist id="players">
-          <option value="Maruda">  
-          <option value="Osom">
-          <option value="Berny">
-          </datalist>
-        <input type="number" id="score1" name="score1" value="0" onfocus="if (this.value !='') this.value='';"
-        onblur="if (this.value=='') this.value='0';">
-        <input type="number" id="score2" name="score2" value="0" onfocus="if (this.value !='') this.value='';"
-        onblur="if (this.value=='') this.value='0';">
-        
-        <button onclick="saveName()">
-          ADD
-        </button>
-        
-      </div>
-      
-      <div class="tabela">
-        
-      </div>
+    <div class="wrapper">
+
+        <div class="app-body">
+
+            <div class="section-left">
+                <input type="text" id="player1" value="Player1">
+                <input type="number" id="score1" value="0">
+            </div>
+            <button class="swap">
+                <img src="img/squash.png" alt="squash icon">
+            </button>
+            <div class="section-right">
+                <input type="text" id="player2" value="Player2">
+                <input type="number" id="score2" value="0">
+                </select>
+            </div>
+        </div>
     </div>
-    <script src="mainxd.js"></script>
-  </body>
+    <div class="table">
+        
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
 </html>
