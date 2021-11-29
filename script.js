@@ -13,7 +13,7 @@ const drawWinLose = () => {
      scoreboard.innerHTML = `
      <div class="scoreboard-row">
      <span class="title">Name</span>
-     <span class="title">win-lose</span>
+     <span class="title winLose">win - lose</span>
      <span class="title">+/-</span>
      </div>`;
 for (let i = 0; i < names.length; i++) {
