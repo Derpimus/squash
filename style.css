@@ -11,6 +11,7 @@ body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: #29303B;
+    font-weight: bold;
 }
 
 .wrapper,
@@ -41,7 +42,7 @@ body {
 
 }
 
-#match-history{
+#match-history {
     margin-top: 30px;
 }
 
@@ -90,7 +91,8 @@ body {
 }
 
 
-.swap, .save {
+.swap,
+.save {
     margin: 15px;
     padding: 5px 50px;
     background-image: linear-gradient(45deg, #2b89e7, #11e763);
@@ -100,9 +102,11 @@ body {
     color: #fff;
     cursor: pointer;
 }
-.save{
+
+.save {
     background-image: linear-gradient(45deg, #e7472b, #e7e311);
 }
+
 .swap:focus {
     outline: none;
     background-image: linear-gradient(45deg, #317fcc, #1fc06a);
@@ -122,10 +126,12 @@ input#score2 {
     font-size: 40px;
     appearance: textfield;
 }
+
 input#player1,
 input#player2 {
     width: 100px;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -171,31 +177,41 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.row:hover{
+    cursor: pointer;
 }
 
-.row:nth-child(even), .scoreboard-row:nth-child(even) {
+.row:nth-child(even),
+.scoreboard-row:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
-.scoreboard-row{
+
+.scoreboard-row {
     display: flex;
     justify-content: space-around;
+    padding: 5px;
 }
-.title{
+
+.title {
     transform: translate(-25%);
 }
-.name{
+
+.name {
     position: absolute;
     left: 23px;
 }
-.plus-minus{
+
+.plus-minus {
     position: absolute;
     right: 45px;
 }
-.record{
+
+.record {
     transform: translate(-50%);
 }
-.buttons{
-    transform: translate(0,-25%);
+
+.buttons {
+    transform: translate(0, -25%);
 }
