@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -65,4 +66,73 @@
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squash score table</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a361119e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="app-body">
+
+            <div class="section-left">
+                <input type="text" id="player1" value="Player1"
+                    onfocus="if(this.value == 'Player1') { this.value = ''; }"
+                    onblur="if(this.value == '') { this.value = 'Player1'; }">
+                <input type="number" id="score1" value="0" onfocus="if(this.value == '0') { this.value = ''; }"
+                    onblur="if(this.value == '') { this.value = '0'; }">
+            </div>
+            <div class="buttons">
+                <button class="swap" tabindex="-1">
+                    <img src="img/squash.png" alt="squash icon">
+                </button>
+                <button class="save" tabindex="-1">
+                    <img src="img/save.png" alt="squash icon">
+                </button>
+            </div>
+            
+            <div class="section-right">
+                <input type="text" id="player2" value="Player2"
+                    onfocus="if(this.value == 'Player2') { this.value = ''; }"
+                    onblur="if(this.value == '') { this.value = 'Player2'; }">
+                <input type="number" id="score2" value="0" onfocus="if(this.value == '0') { this.value = ''; }"
+                    onblur="if(this.value == '') { this.value = '0'; }">
+                </select>
+            </div>
+        </div>
+
+
+        
+        <div class="table" id="scoreboard">
+            <div class="scoreboard-row">
+                <span class="title">Name</span>
+                <span class="title">win-lose</span>
+                <span class="title">+/-</span>
+            </div>
+        </div>
+
+
+        
+        <div class="table" id="match-history">
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+>>>>>>> f89e703ec1d0f5bcff809e85b3fadfeb3704b489
 </html>
